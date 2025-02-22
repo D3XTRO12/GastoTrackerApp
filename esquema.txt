@@ -1,0 +1,14 @@
+(tabs)
+    |->gastos
+        |->index.tsx
+        |->add.tsx
+        |->edit.tsx
+    |->ingresos
+        |->index.tsx
+        |->add.tsx
+    |->_layout.tsx
++html.tsx
++not-found.tsx
+modal.tsx
+_layout.tsx
+index.tsx(mi screen principal)

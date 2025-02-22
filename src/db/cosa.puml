@@ -1,0 +1,33 @@
+@startuml Class Diagram
+    User "1" -- "*" Income
+    User "1" -- "*" Expense
+    
+    class User {
+        +Integer id
+        +String name
+        +addIncome(Income)
+        +addExpense(Expense)
+        +calculateBalance()
+        +calculateSavings()
+    }
+
+    class Income {
+        +Integer id
+        +Integer userId
+        +Float amount
+        +Date date
+    }
+
+    class Expense {
+        +Integer id
+        +Integer userId
+        +Float amount
+        +Date date
+        +String category
+        +String description
+        +String paymentMethod
+        +Boolean isCredit
+        +Integer installments
+        +Float installmentAmount
+        +Boolean isPaid
+    }
